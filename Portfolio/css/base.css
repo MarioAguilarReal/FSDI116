@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+}
+
+/*
+Default font size: 16px
+ */
+/* *px - REM
+    REM: relative to the root element font size
+ */
+
+html{font-size: 14;}
+
+/*
+    1 REM: = 14px
+*/
+
+.primary-button{
+    color: #333333;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: none;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    padding: 0 2%;
+    transition-duration: 60ms;
+}
+.primary-button:hover{
+/* Figma plugin: color shades kit */
+    color:#333333;
+    font-size: 1.2rem;
+    border-bottom: solid 2px greenyellow;
+}
+
+/* Usability Heuristic #1: Visibility of system status */
+.current{
+    border-bottom: 4px solid #ffffff;
+}
+
+.container{
+    margin: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1{
+    text-transform: uppercase;
+}

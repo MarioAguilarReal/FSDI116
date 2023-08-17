@@ -1,0 +1,87 @@
+#contact-container{
+    display: flex;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    border: solid 1px;
+}
+
+/* Estilos generales */
+.form-section {
+    flex: 2;
+    align-items: center;
+    background-color: #f7f7f7;
+    padding: 10px;
+
+}
+
+.contact-form {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 30px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    width: 80%; /* Ajusta el ancho según tus necesidades */
+    max-width: 400px; /* Ajusta el máximo ancho según tus necesidades */
+}
+
+/* Títulos */
+.title {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.subtitle {
+    font-size: 1.1rem;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+/* Formulario */
+.form-field {
+    margin-bottom: 15px;
+}
+
+input,
+textarea {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: border-color 0.3s;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #007bff;
+}
+
+.form-button {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 15px;
+}
+
+.primary-button,
+.secondary-button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.form-button {
+    color: #fff;
+}
+
+.secondary-button {
+    background-color: #ccc;
+    color: #333
+}
+
+.info-section {
+    flex: 2;
+}

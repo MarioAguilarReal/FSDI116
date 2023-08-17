@@ -1,0 +1,45 @@
+.header-container{
+    height: 60px;
+    background-color: #000458;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-container{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-img{
+    width: 8.75rem;
+}
+
+.menu-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.menu-container > .menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+}
+.menu-container > .menu > a {
+    color:white !important;
+    text-decoration: none;
+}
+.menu-mobile{
+    display: none;
+}
+.menu-mobile>span{
+    color: white;
+}
+.hidden{
+    display: none !important;
+}
+
+

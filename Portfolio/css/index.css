@@ -1,0 +1,282 @@
+.main-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.hero-image{
+    background-image: url("../images/hero-image.jpg");
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+}
+.hero-image::after{
+    content: "";
+    background-color: rgb(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+}
+.hero-image>.content{
+    max-width: 60%;
+    max-height: 50px;
+    justify-content: center;
+    margin-top: 35vh;
+    z-index: 1;
+}
+
+.hero-image>.content>h2{
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 20px 0 0 0;
+    font-weight: 200;
+
+}
+.hero-image>.content>h1{
+    margin:0;
+    font-size: 3rem;
+    color: white !important;
+    font-weight: 100;
+    text-align: center;
+    font-weight: 700;
+}
+.hero-image>.content>h1>.inter{
+    color: #f0f0f0 !important;
+}
+.hero-image>.content>.social-icons{
+    margin-top: 20px;
+    color:white !important;
+    font-size: 1.5rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+.hero-image>.content>.social-icons>i{
+    padding: 10px;
+    color: #f0f0f0;
+    transition: 700ms;
+}
+.hero-image>.content>.social-icons>i:hover{
+color: rgb(21, 100, 113);
+transform: scale(1.5);
+}
+
+
+/* About me section */
+.about{
+    max-width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.about>.image{
+    flex: 4;
+    max-width: 50%;
+    padding: 20px;
+}
+.about>.image>img{
+    width: 300px;
+    height: 500px;
+    object-fit: cover;
+}
+.about>.info{
+    flex:6;
+    max-width: 60%;
+}
+.about>.info>h3{
+    font-size: 2rem;
+    margin: 0;
+}
+.about>.info>h5{
+    font-weight: 400;
+    text-transform: uppercase;
+    margin:0
+}
+/* .info>.skills>.skill{
+    width: 100%;
+    height: 30px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.info>.skills>.skill>.progress>p{
+    color: white;
+    font-weight: 500;
+} */
+
+/* .info>.skills>.skill>.progress {
+    height: 100%;
+    background-color: #000000;
+    border-radius: 5px;
+    padding: 0px;
+} */
+
+.info>.buttons-info>button{
+    margin-top: 20px;
+    padding: 10px;
+    width: 25%;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+.info>.buttons-info>.cv{
+    background-color: black;
+    color: white;
+}
+.info>.buttons-info>.cv:hover{
+    background-color: white;
+    color: #000000;
+}
+.info>.buttons-info>.contact{
+    background-color: white;
+}
+.info>.buttons-info>.contact:hover{
+    background-color: #000000;
+    color: white;
+}
+
+/* Projects section */
+.projects-section{
+    display: flex;
+    flex-direction: column;
+    max-width: 70%;
+    justify-content: space-between;
+    text-align: center;
+    margin-bottom: 60px;
+}
+.projects-section h4{
+    font-size: 2.5rem;
+    text-transform: none;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+.projects{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 50px;
+}
+.projects .card-project{
+    box-shadow: 0px 0px 10px;
+    transition: 100ms;
+}
+.projects .card-project:hover{
+    transform: scale(1.2);
+}
+.projects .card-project img{
+    width: 100%;
+    height: 260px;
+}
+.projects .card-project div h3{
+    font-size: 2rem;
+}
+.projects .card-project div p{
+    font-size: 1.2rem;
+    text-justify: auto;
+}
+.projects .card-project div{
+    padding: 20px;
+}
+
+/* services section */
+.services{
+    margin-top: 50px;
+    display: block;
+    justify-content: center;
+    max-width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.services>h2{
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 50px;
+}
+
+.services>.card-services{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    padding-bottom: 5px;
+    margin: 0;
+
+}
+
+
+.services>.card-services>.service-card{
+    border: solid 0px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 2px rgb(0, 0, 0, 0.2);
+    padding: 20px;
+}
+.services>.card-services>.service-card>i{
+    font-size: 40px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 50px;
+    margin-left: 39.5%;
+    margin-right: 38%;
+    background-color: #f0f0f0;
+}
+.services>.card-services>.service-card>h4{
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin: 0;
+}
+.services>.card-services>.service-card>.description{
+    text-align: center;
+    justify-content: center;
+}
+
+.inter{
+    animation: showing 1s infinite;
+}
+
+@keyframes showing {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .about {
+      flex-direction: column;
+    }
+    .about>.image>img{
+        width: 200px;
+        height: 300px;
+        object-fit: cover;
+    }
+    .about > .image,
+    .about > .info {
+      max-width: 100%;
+    }
+    .services {
+        max-width: 100%;
+        padding: 0 20px;
+      }
+
+      .services > .card-services {
+        grid-template-columns: 1fr;
+      }
+
+      .services > .card-services > .service-card {
+        text-align: center;
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+  }

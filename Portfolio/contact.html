@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/contact.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Mario Aguilar</title>
+</head>
+<body>
+    <header class="header-container">
+        <!-- Logo - Menu -->
+        <div class="logo-container">
+            <a href="index.html">
+                <img class="logo-img" src="./images/logo-txt-white.png" alt="Logo.png">
+            </a>
+        </div>
+        <div class="menu-container">
+            <nav class="menu">
+                <a class="primary-button" href="projects.html">Features Projects</a>
+                <a class="primary-button" href="skills.html">Skills</a>
+                <a class="primary-button" href="about.html">About Me</a>
+                <a class="primary-button current" href="contact.html">Contact</a>
+            </nav>
+        </div>
+
+        <!-- Mobile menu -->
+        <div class="menu-mobile">
+            <a onclick="menuToggle()">
+                <span class="material-icons ">
+                    menu
+                </span>
+            </a>
+            <nav id="nav-mobile" class="nav-mobile hidden">
+                <a class="primary-button" href="projects.html">Features Projects</a>
+                <a class="primary-button" href="skills.html">Skills</a>
+                <a class="primary-button" href="about.html">About Me</a>
+                <a class="primary-button current" href="contact.html">Contact</a>
+            </nav>
+        </div>
+
+    </header>
+    <div id="contact-container">
+        <div class="form-section">
+            <h1 class="title">Get in Touch</h1>
+            <p class="subtitle">Feel free to drop me a line below</p>
+
+            <form action="" id="email-form" class="contact-form">
+
+                    <input type="text" id="name" placeholder="Name" required>
+
+
+                    <input type="email" id="email" placeholder="Email" required>
+
+
+                    <input type="text" id="subject" placeholder="Subject">
+
+
+                    <textarea id="message" rows="4" placeholder="Message" required></textarea>
+
+                <div class="form-button">
+                    <button type="submit" class="sec-button">Send Email</button>
+                    <button type="reset" class="secondary-button">Reset</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="info-section">
+            <h1>Contact Information</h1>
+        </div>
+    </div>
+    <footer>
+
+    </footer>
+    <script src="js/scripts.js"></script>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script> <!-- This is the EmailJS library -->
+    <script src="js/email.js"></script>
+</body>
+</html>

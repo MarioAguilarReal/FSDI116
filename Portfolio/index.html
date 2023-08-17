@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <title>Mario Aguilar</title>
+</head>
+<body>
+    <header class="header-container">
+        <!-- Logo - Menu -->
+        <div class="logo-container">
+            <a href="index.html">
+                <img class="logo-img" src="./images/logo-txt-white.png" alt="Logo.png">
+            </a>
+        </div>
+        <div class="menu-container">
+            <nav class="menu">
+                <a class="primary-button" href="#projects">Features Projects</a>
+                <a class="primary-button" href="#skills">Skills</a>
+                <a class="primary-button" href="#about">About Me</a>
+                <a class="primary-button" href="contact.html">Contact</a>
+            </nav>
+        </div>
+
+        <!-- Mobile menu -->
+        <div class="menu-mobile">
+            <a onclick="menuToggle()">
+                <span class="material-icons ">
+                    menu
+                </span>
+            </a>
+            <nav id="nav-mobile" class="nav-mobile hidden">
+                <a class="primary-button" href="#projects">Features Projects</a>
+                <a class="primary-button" href="#skills">Skills</a>
+                <a class="primary-button" href="#about">About Me</a>
+                <a class="primary-button" href="contact.html">Contact</a>
+            </nav>
+        </div>
+
+    </header>
+    <main class="main-container">
+        <section class="hero-image">
+            <div class="content">
+                <h1>FullStack Developer <spam class="inter" id="inter-element">|</spam></h1>
+                <h2>Mario Aguilar Real</h2>
+                <div class="social-icons">
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                    <i class="fa fa-linkedin" aria-hidden="true"></i>
+                    <i class="fa fa-youtube" aria-hidden="true"></i>
+                </div>
+            </div>
+        </section>
+        <section class="about" id="about">
+            <div class="image">
+                <img src="./img/avatar.jpg" alt="">
+            </div>
+            <div class="info">
+                <h3>About Me. </h3>
+                <h5>Full Stack Developer</h5>
+                <p>
+                    Lorem Ipsum is considered
+
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam fuga
+                    veritatis iste est at! A maiores ex accusantium, nesciunt ipsa ratione
+                    tempore, quas eum veritatis ad delectus quo, laudantium unde?
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam fuga
+                    veritatis iste est at! A maiores ex accusantium, nesciunt ipsa ratione
+                    tempore, quas eum veritatis ad delectus quo, laudantium unde?
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam fuga
+                    veritatis iste est at! A maiores ex accusantium, nesciunt ipsa ratione
+                    tempore, quas eum veritatis ad delectus quo, laudantium unde?
+                </p>
+                <div class="buttons-info">
+                    <button class="cv">Download CV</button>
+                    <button class="contact">Contact Me</button>
+                </div>
+            </div>
+        </section>
+        <section class="projects-section" id="projects">
+            <h4>My projects</h4>
+            <div class="projects">
+                <div class="card-project">
+                    <img src="./images/html-css-javascript.jpg" alt="">
+                    <div>
+                        <h3>Pet Salon</h3>
+                        <p>Este projecto es un proyecto de administración de datos de una estetica de mascotas hecha con HTML, CSS, JS y Jquery</p>
+                    </div>
+                </div>
+                <div class="card-project">
+                    <img src="./images/react.png" alt="">
+                    <div>
+                        <h3>Tienda digital</h3>
+                        <p>Este proyecto consiste en hacer una tienda digital personalizada utilizando tecnologias como react, mongoDB, flask para administrar los datos del sistema.</p>
+                    </div>
+                </div>
+                <div class="card-project">
+                    <img src="./images/django.png" alt="">
+                    <div>
+                        <h3>Task Manager</h3>
+                        <p>EL proyecto se hizo con la finalidad de tener un administrador de tareas con un framework en el que se creo la parte del cliente y la parte del servidor con la misma tecnologia.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="services" id="skills">
+            <h2>Skills.</h2>
+            <div class="card-services">
+                <div class="service-1 service-card">
+                    <i class="fa fa-laptop"></i>
+                    <h4>HTML, CSS, JS, JQUERY</h4>
+                </div>
+                <div class="service-2 service-card">
+                    <i class="fa fa-bullhorn"></i>
+                    <h4>REACT</h4>
+                </div>
+                <div class="service-3 service-card">
+                    <i class="fa fa-umbrella"></i>
+                    <h4>FLASK</h4>
+                </div>
+                <div class="service-4 service-card">
+                    <i class="fa fa-diamond"></i>
+                    <h4>DJANGO + REST</h4>
+                </div>
+                <div class="service-5 service-card">
+                    <i class="fa fa-desktop"></i>
+                    <h4></h4>
+                </div>
+                <div class="service-6 service-card">
+                    <i class="fa fa-camera"></i>
+                    <h4></h4>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div>
+            <img src="images/logo-txt-white.png" alt="">
+        </div>
+        <div>
+            <p class="copyright">All rigth reserved &copy Mario Aguilar</p>
+        </div>
+    </footer>
+    <script src="js/scripts.js"></script>
+
+</body>
+</html>
