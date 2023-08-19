@@ -52,3 +52,111 @@ html{font-size: 14;}
 h1{
     text-transform: uppercase;
 }
+  .progress-container {
+    width: 300px;
+    height: 30px;
+    border: 1px solid #ccc;
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+  }
+
+  .progress-bar {
+    width: 0;
+    height: 100%;
+    background-color: #4CAF50;
+    position: absolute;
+    animation: fillProgressBar 4s linear forwards; /* Duración de la animación */
+  }
+  .progress-bar-react {
+    width: 0;
+    height: 100%;
+    background-color: #4CAF50;
+    position: absolute;
+    animation: fillProgressBar-react 4s linear forwards; /* Duración de la animación */
+  }
+  .progress-bar-flask {
+    width: 0;
+    height: 100%;
+    background-color: #4CAF50;
+    position: absolute;
+    animation: fillProgressBar-flask 4s linear forwards; /* Duración de la animación */
+  }
+  .progress-bar-django {
+    width: 0;
+    height: 100%;
+    background-color: #4CAF50;
+    position: absolute;
+    animation: fillProgressBar-django 4s linear forwards; /* Duración de la animación */
+  }
+  .progress-bar-bootstrap {
+    width: 0;
+    height: 100%;
+    background-color: #4CAF50;
+    position: absolute;
+    animation: fillProgressBar-bootstrap 4s linear forwards; /* Duración de la animación */
+  }
+  .progress-bar-node {
+    width: 0;
+    height: 100%;
+    background-color: #4CAF50;
+    position: absolute;
+    animation: fillProgressBar-node 4s linear forwards; /* Duración de la animación */
+  }
+
+  .progress-label {
+    text-align: center;
+    line-height: 30px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+  }
+
+  /* Animación */
+  @keyframes fillProgressBar {
+    from {
+      width: 0;
+    }
+    to {
+      width: 90%; /* Cambia este valor al porcentaje deseado */
+    }
+  }
+  @keyframes fillProgressBar-react {
+    from {
+      width: 0;
+    }
+    to {
+      width: 80%; /* Cambia este valor al porcentaje deseado */
+    }
+  }
+  @keyframes fillProgressBar-flask {
+    from {
+      width: 0;
+    }
+    to {
+      width: 70%; /* Cambia este valor al porcentaje deseado */
+    }
+  }
+  @keyframes fillProgressBar-django {
+    from {
+      width: 0;
+    }
+    to {
+      width: 80%; /* Cambia este valor al porcentaje deseado */
+    }
+  }
+  @keyframes fillProgressBar-bootstrap {
+    from {
+      width: 0;
+    }
+    to {
+      width: 95%; /* Cambia este valor al porcentaje deseado */
+    }
+  }
+  @keyframes fillProgressBar-node {
+    from {
+      width: 0;
+    }
+    to {
+      width: 80%; /* Cambia este valor al porcentaje deseado */
+    }
+  }
